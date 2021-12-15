@@ -270,6 +270,10 @@ class Cart {
   $$ (ele) {
     return document.querySelectorAll(ele)
   }
+
+  say(){
+    console.log(111);
+  }
 }
 
 new Cart;
