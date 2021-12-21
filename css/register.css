@@ -1,0 +1,322 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 头部 */
+header {
+  width: 990px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  color: #43200c;
+  text-align: center;
+}
+
+header .left img {
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+header .left h3 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+header .left span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 17px;
+  transform: scale(0.7);
+}
+
+header .right {
+  text-align: center;
+}
+
+header .right p {
+  font-size: 25px;
+  font-weight: 700;
+  color: #E93854;
+  transform: scale(0.9);
+}
+
+header .right span {
+  font-size: 12px;
+  margin-top: 55px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+header .right span a {
+  color: #E93854;
+}
+
+/* 提示 */
+.tips {
+  width: 100%;
+  height: 40px;
+  background-color: #FFF8F0;
+}
+
+.tips p {
+  width: 990px;
+  height: 100%;
+  margin: 0 auto;
+  color: #999;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* 注册区 */
+.register-banner {
+  width: 100%;
+  height: 579px;
+  background-color: #E93854;
+  margin-bottom: 25px;
+  /* 居中盒子注册背景区 */
+}
+
+.register-banner .banner-bg {
+  width: 990px;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../images/banner.jpg) no-repeat 0px 0px ;
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* 注册大盒子 */
+}
+
+.register-banner .banner-bg .register {
+  width: 440px;
+  background-color: white;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  /* 用户信息区域 */
+  /* 立即注册 */
+}
+
+.register-banner .banner-bg .register p {
+  width: 100%;
+  height: 38px;
+  background-color: #FFF8F0;
+  line-height: 38px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register-banner .banner-bg .register .userInformation {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  /* 用户名和密码 */
+}
+
+.register-banner .banner-bg .register .userInformation .accountNumber,
+.register-banner .banner-bg .register .userInformation .psw,
+.register-banner .banner-bg .register .userInformation .psw-r,
+.register-banner .banner-bg .register .userInformation .mailbox,
+.register-banner .banner-bg .register .userInformation .emailVerificationCode {
+  border: 1px solid #bdbdbd;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  /* label font */
+}
+
+.register-banner .banner-bg .register .userInformation .accountNumber label,
+.register-banner .banner-bg .register .userInformation .psw label,
+.register-banner .banner-bg .register .userInformation .psw-r label,
+.register-banner .banner-bg .register .userInformation .mailbox label,
+.register-banner .banner-bg .register .userInformation .emailVerificationCode label {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 120px;
+  height: 50px;
+  text-align: left;
+  line-height: 50px;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+.register-banner .banner-bg .register .userInformation .accountNumber input,
+.register-banner .banner-bg .register .userInformation .psw input,
+.register-banner .banner-bg .register .userInformation .psw-r input,
+.register-banner .banner-bg .register .userInformation .mailbox input,
+.register-banner .banner-bg .register .userInformation .emailVerificationCode input {
+  display: inline-block;
+  border: none;
+  width: 100%;
+  height: 36px;
+  outline: none;
+  font-size: 12px;
+}
+
+.register-banner .banner-bg .register .userInformation .emailVerificationCode {
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.register-banner .banner-bg .register .userInformation .emailVerificationCode .left {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.register-banner .banner-bg .register .userInformation .emailVerificationCode .left label {
+  width: 91.89px;
+}
+
+.register-banner .banner-bg .register .userInformation .emailVerificationCode .left input {
+  width: 168px;
+  display: inline-block;
+}
+
+.register-banner .banner-bg .register .userInformation .emailVerificationCode button {
+  width: 118px;
+  height: 50px;
+  background-color: white;
+  border: none;
+  color: #333;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+
+.register-banner .banner-bg .register .userInformation .input-tip {
+  width: 100%;
+  height: 32px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  color: orange;
+  font-size: 12px;
+  line-height: 27px;
+}
+
+.register-banner .banner-bg .register .userInformation .forgetPsw {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.register-banner .banner-bg .register .userInformation .forgetPsw a {
+  font-size: 12px;
+  color: #666;
+}
+
+.register-banner .banner-bg .register .userInformation .register-btn {
+  width: 100%;
+  height: 33px;
+  background-color: #e4393c;
+  color: white;
+  text-align: center;
+  line-height: 33px;
+  font-size: 15px;
+  font-family: 'Microsoft YaHei';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-banner .banner-bg .register .register {
+  width: 100%;
+  height: 50px;
+  background-color: #FCFCFC;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-top: 1px solid #f4f4f4;
+}
+
+.register-banner .banner-bg .register .register .left {
+  display: flex;
+  align-items: center;
+}
+
+.register-banner .banner-bg .register .register .left li .fg {
+  margin: 0 10px;
+}
+
+.register-banner .banner-bg .register .register .left li img {
+  width: 19px;
+  height: 19px;
+  /* vertical-align: middle; */
+}
+
+.register-banner .banner-bg .register .register .left li span {
+  font-size: 12px;
+}
+
+.register-banner .banner-bg .register .register .register-a {
+  font-size: 14px;
+  color: #b61d1d;
+}
+
+/* 关于我们 */
+.aboutUs {
+  width: 990px;
+  height: 86px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutUs ul {
+  height: 18px;
+  display: flex;
+}
+
+.aboutUs ul li {
+  height: 18px;
+}
+
+.aboutUs ul li:last-child a {
+  border-right: none;
+}
+
+.aboutUs ul li a {
+  display: block;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #666;
+  line-height: 12px;
+  border-right: 1px solid #666;
+}
+
+.aboutUs .copyright {
+  height: 18px;
+  font-size: 12px;
+  color: #666;
+}
